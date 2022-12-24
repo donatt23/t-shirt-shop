@@ -1,0 +1,624 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zen+Dots&display=swap");
+
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+a,
+a::before,
+a::after {
+     text-decoration: none;
+     color: white;
+}
+
+html {
+     scroll-behavior: smooth;
+}
+
+body {
+     overflow-x: hidden;
+     font-family: "Montserrat", sans-serif;
+}
+
+::-webkit-scrollbar-track {
+     box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+     background-color: transparent;
+     border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+     width: 10px;
+     background-color: rgb(230, 230, 230);
+}
+
+::-webkit-scrollbar-thumb {
+     border-radius: 12px;
+     background-color: rgb(230, 230, 230);
+     background-image: -webkit-gradient(linear, 40% 0%, 75% 84%, from(rgb(43, 43, 43)), to(rgb(43, 43, 43)), color-stop(0.8, rgb(68, 68, 68)));
+}
+
+header {
+     width: 100vw;
+     background-color: rgb(230, 230, 230);
+}
+
+header .nav-links #home {
+     font-weight: 700;
+     color: #625242;
+}
+
+header .nav-links #home:hover {
+     color: black;
+}
+
+header .header-image-container {
+     height: 100vh;
+     width: 100vw;
+}
+
+header .header-image-container .header-section {
+     height: 100%;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background: url("/images/main-image.png");
+     background-repeat: no-repeat;
+     background-size: cover;
+     position: relative;
+}
+
+header .header-image-container .header-section .header-description {
+     height: 50%;
+     width: 40vw;
+     z-index: 11;
+     text-align: center;
+     color: white;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+}
+
+header .header-image-container .header-section .header-description .custom-font {
+     position: relative;
+}
+
+header .header-image-container .header-section .header-description .custom-font h1 {
+     font-family: "Zen Dots", cursive;
+     margin-bottom: 30px;
+     padding-top: 30px;
+     font-size: 4em;
+}
+
+header .header-image-container .header-section .header-description .custom-font h1::before {
+     content: "";
+     position: absolute;
+     top: 50%;
+     left: -50%;
+     width: 50px;
+     height: 3px;
+     z-index: 30;
+     background-color: white;
+}
+
+header .header-image-container .header-section .header-description .custom-font h1::after {
+     content: "";
+     position: absolute;
+     top: 50%;
+     right: -50%;
+     width: 50px;
+     height: 3px;
+     z-index: 30;
+     background-color: white;
+}
+
+header .header-image-container .header-section .header-description h1 {
+     font-size: 2.6em;
+     font-family: "Montserrat", sans-serif;
+     font-weight: 300;
+}
+
+header .header-image-container::after {
+     content: "";
+     position: absolute;
+     z-index: 10;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+main {
+     width: 100vw;
+     height: 350vh;
+     background-color: rgb(230, 230, 230);
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+}
+
+main .main-top-products {
+     height: 15%;
+     width: 90%;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+     text-align: center;
+}
+
+main .main-top-products h2 {
+     font-family: "Zen Dots", cursive;
+     font-size: 3.5em;
+     letter-spacing: 5px;
+}
+
+main .main-top-products h1 {
+     color: rgb(69, 69, 69);
+     font-size: 1.5em;
+     letter-spacing: 1px;
+}
+
+main .cards-container {
+     width: 90%;
+     height: 80%;
+     background-color: rgb(230, 230, 230);
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     box-shadow: 5px 0px 25px 2px rgba(0, 0, 0, 0.1), 5px 5px 25px 10px rgba(0, 0, 0, 0.2);
+     position: relative;
+}
+
+main .cards-container h1 {
+     margin-top: 80px;
+     font-family: "Zen Dots", cursive;
+}
+
+main .cards-container .cards-div {
+     width: 95%;
+     height: 95%;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     align-items: center;
+}
+
+main .cards-container .cards-div::before {
+     content: "";
+     position: absolute;
+     background-color: black;
+     width: 80px;
+     height: 4px;
+     top: 0;
+     left: 0;
+}
+
+main .cards-container .cards-div::after {
+     content: "";
+     position: absolute;
+     background-color: black;
+     width: 4px;
+     height: 80px;
+     left: 0;
+     top: 0;
+}
+
+main .cards-container .cards-div .cards-first-row {
+     width: 100%;
+     height: 30%;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     text-align: center;
+}
+
+main .cards-container .cards-div .cards-first-row .cards {
+     background: #e8e8e8;
+     padding: 25px 25px 35px 25px;
+     box-shadow: 0 0 10px 2px rgb(117, 117, 117);
+     border: 1px solid black;
+     transition: transform 0.25s;
+     -webkit-backface-visibility: hidden;
+     backface-visibility: hidden;
+     transform: translateZ(0);
+}
+
+main .cards-container .cards-div .cards-first-row .cards:hover {
+     -webkit-animation: zoom-in-zoom-out 0.25s ease;
+     animation: zoom-in-zoom-out 0.25s ease;
+     transform: scale(1.05);
+}
+
+main .cards-container .cards-div .cards-first-row .cards img {
+     width: 19vw;
+     -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main .cards-container .cards-div .cards-first-row .cards p {
+     font-size: 1.2em;
+     font-weight: 500;
+     color: rgb(0, 0, 0);
+}
+
+main .cards-container .cards-div .cards-first-row .cards h4 {
+     font-size: 1em;
+     color: rgb(0, 0, 0);
+     padding: 8px 0;
+}
+
+main .cards-container .cards-div .cards-first-row .cards a button {
+     padding: 15px 15px;
+     color: black;
+     background-color: white;
+     font-size: 0.9em;
+     font-weight: 600;
+     font-family: "Montserrat", sans-serif;
+     transition: color 0.3s, background-color 0.3s;
+     border: 1px solid black;
+     outline: none;
+     cursor: pointer;
+}
+
+main .cards-container .cards-div .cards-first-row .cards a button:hover {
+     color: white;
+     background-color: black;
+}
+
+main .cards-container .cards-div .cards-second-row {
+     width: 100%;
+     height: 30%;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     text-align: center;
+}
+
+main .cards-container .cards-div .cards-second-row .cards {
+     background: #e8e8e8;
+     padding: 25px 25px 35px 25px;
+     box-shadow: 0 0 10px 2px rgb(117, 117, 117);
+     border: 1px solid black;
+     transition: transform 0.25s;
+     -webkit-backface-visibility: hidden;
+     backface-visibility: hidden;
+     transform: translateZ(0);
+}
+
+main .cards-container .cards-div .cards-second-row .cards:hover {
+     -webkit-animation: zoom-in-zoom-out 0.25s ease;
+     animation: zoom-in-zoom-out 0.25s ease;
+     transform: scale(1.05);
+}
+
+main .cards-container .cards-div .cards-second-row .cards img {
+     width: 19vw;
+     -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main .cards-container .cards-div .cards-second-row .cards p {
+     font-size: 1.2em;
+     font-weight: 500;
+     color: rgb(0, 0, 0);
+}
+
+main .cards-container .cards-div .cards-second-row .cards h4 {
+     font-size: 1em;
+     color: rgb(0, 0, 0);
+     padding: 8px 0;
+}
+
+main .cards-container .cards-div .cards-second-row .cards button {
+     padding: 15px 15px;
+     color: black;
+     background-color: white;
+     font-size: 0.9em;
+     font-weight: 600;
+     font-family: "Montserrat", sans-serif;
+     transition: color 0.3s, background-color 0.3s;
+     border: 1px solid black;
+     outline: none;
+     cursor: pointer;
+}
+
+main .cards-container .cards-div .cards-second-row .cards button:hover {
+     color: white;
+     background-color: black;
+}
+
+main .cards-container .cards-div .cards-third-row {
+     width: 100%;
+     height: 30%;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     text-align: center;
+}
+
+main .cards-container .cards-div .cards-third-row .cards {
+     background: #e8e8e8;
+     padding: 25px 25px 35px 25px;
+     box-shadow: 0 0 10px 2px rgb(117, 117, 117);
+     border: 1px solid black;
+     transition: transform 0.25s;
+     -webkit-backface-visibility: hidden;
+     backface-visibility: hidden;
+     transform: translateZ(0);
+}
+
+main .cards-container .cards-div .cards-third-row .cards:hover {
+     -webkit-animation: zoom-in-zoom-out 0.25s ease;
+     animation: zoom-in-zoom-out 0.25s ease;
+     transform: scale(1.05);
+}
+
+main .cards-container .cards-div .cards-third-row .cards img {
+     width: 19vw;
+     -o-object-fit: cover;
+     object-fit: cover;
+}
+
+main .cards-container .cards-div .cards-third-row .cards p {
+     font-size: 1.2em;
+     font-weight: 500;
+     color: rgb(0, 0, 0);
+}
+
+main .cards-container .cards-div .cards-third-row .cards h4 {
+     font-size: 1em;
+     color: rgb(0, 0, 0);
+     padding: 8px 0;
+}
+
+main .cards-container .cards-div .cards-third-row .cards button {
+     padding: 15px 15px;
+     color: black;
+     background-color: white;
+     font-size: 0.9em;
+     font-weight: 600;
+     font-family: "Montserrat", sans-serif;
+     transition: color 0.3s, background-color 0.3s;
+     border: 1px solid black;
+     outline: none;
+     cursor: pointer;
+}
+
+main .cards-container .cards-div .cards-third-row .cards button:hover {
+     color: white;
+     background-color: black;
+}
+
+.collection-section {
+     width: 100vw;
+     padding-top: 100px;
+     background-color: rgb(205, 205, 205);
+     display: flex;
+     flex-direction: column;
+     justify-content: space-evenly;
+     align-items: center;
+     position: relative;
+}
+
+.collection-section::after {
+     content: "";
+     position: absolute;
+     width: 3px;
+     height: 60px;
+     background-color: rgb(43, 43, 43);
+     top: -30px;
+     left: 50%;
+}
+
+.collection-section p {
+     font-size: 1.8em;
+     font-weight: 600;
+     padding-bottom: 50px;
+     text-align: center;
+     letter-spacing: 1px;
+     line-height: 40px;
+     color: rgb(43, 43, 43);
+}
+
+.collection-section .collection-container {
+     max-width: 80%;
+     width: 100%;
+}
+
+.collection-section .collection-container .top-images {
+     max-width: 100%;
+     height: 400px;
+     width: 100%;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+}
+
+.collection-section .collection-container .top-images .left-image {
+     height: 100%;
+     width: 50%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+     transition: transform 0.25s;
+     -webkit-backface-visibility: hidden;
+     backface-visibility: hidden;
+     transform: translateZ(0);
+}
+
+.collection-section .collection-container .top-images .left-image:hover {
+     -webkit-animation: zoom-in-zoom-out2 0.25s ease;
+     animation: zoom-in-zoom-out2 0.25s ease;
+     transform: scale(1.01);
+}
+
+.collection-section .collection-container .top-images .left-image a {
+     height: 100%;
+     width: 100%;
+     display: block;
+}
+
+.collection-section .collection-container .top-images .left-image a::after {
+     content: "STARWARS";
+     position: absolute;
+     top: 0%;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     font-size: 2.8em;
+     font-family: "Zen Dots", cursive;
+     background-color: rgba(0, 0, 0, 0.35);
+}
+
+.collection-section .collection-container .top-images .left-image a img {
+     height: 100%;
+     width: 100%;
+     -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.collection-section .collection-container .top-images .right-image {
+     height: 100%;
+     width: 49%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+     transition: transform 0.25s;
+     -webkit-backface-visibility: hidden;
+     backface-visibility: hidden;
+     transform: translateZ(0);
+}
+
+.collection-section .collection-container .top-images .right-image:hover {
+     -webkit-animation: zoom-in-zoom-out2 0.25s ease;
+     animation: zoom-in-zoom-out2 0.25s ease;
+     transform: scale(1.01);
+}
+
+.collection-section .collection-container .top-images .right-image a {
+     height: 100%;
+     width: 100%;
+}
+
+.collection-section .collection-container .top-images .right-image a::after {
+     content: "MARVEL";
+     position: absolute;
+     top: 0%;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     font-size: 2.8em;
+     font-family: "Zen Dots", cursive;
+     background-color: rgba(0, 0, 0, 0.35);
+}
+
+.collection-section .collection-container .top-images .right-image a img {
+     height: 100%;
+     width: 100%;
+     -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.collection-section .bottom-image-container {
+     max-width: 80%;
+     width: 100%;
+     padding: 5px 0 100px 0;
+}
+
+.collection-section .bottom-image-container .bottom-image {
+     height: 400px;
+     width: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     position: relative;
+     transition: transform 0.25s;
+     -webkit-backface-visibility: hidden;
+     backface-visibility: hidden;
+     transform: translateZ(0);
+}
+
+.collection-section .bottom-image-container .bottom-image:hover {
+     -webkit-animation: zoom-in-zoom-out2 0.25s ease;
+     animation: zoom-in-zoom-out2 0.25s ease;
+     transform: scale(1.01);
+}
+
+.collection-section .bottom-image-container .bottom-image a {
+     height: 100%;
+     width: 100%;
+}
+
+.collection-section .bottom-image-container .bottom-image a::after {
+     content: "TRENDING";
+     position: absolute;
+     top: 0%;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     font-size: 2.8em;
+     font-family: "Zen Dots", cursive;
+     background-color: rgba(0, 0, 0, 0.35);
+}
+
+.collection-section .bottom-image-container .bottom-image a img {
+     height: 100%;
+     width: 100%;
+     -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.client-showcase-section {
+     width: 100vw;
+     padding: 130px 0;
+     background-color: rgb(205, 205, 205);
+     position: relative;
+}
+
+.client-showcase-section::after {
+     content: "";
+     position: absolute;
+     width: 3px;
+     height: 40px;
+     top: -20px;
+     left: 50%;
+     background-color: black;
+}
+
+.client-showcase-section .client-showcase-container {
+     max-width: 100%;
+     width: 100%;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+}
+
+.client-showcase-section .client-showcase-container img {
+     width: 240px;
+     -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*# sourceMappingURL=style.css.map */
